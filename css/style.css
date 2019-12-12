@@ -1,6 +1,6 @@
 #box{
 	font-family: arial;
-	width: 800px;
+	width: 1200px;
 	margin: auto;
 }
 h1{
@@ -34,4 +34,7 @@ input, textarea,#chu{
 	background-color: #f0f1e0;
 	--webkit-border-radius: 6px 6px 6px 6px;
 	border-radius: 6px 6px 6px 6px;
+}
+span{
+	margin-left: 20px;
 }
