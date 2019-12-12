@@ -1,0 +1,37 @@
+#box{
+	font-family: arial;
+	width: 800px;
+	margin: auto;
+}
+h1{
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.chutrai{
+	padding: 8px 12px 8px 8px;
+	font-style: italic;
+	position: relative;
+	text-align: right;
+}
+#chu{
+	height: 22px;
+	background-color: #f0f1e0;
+}
+#ma{
+	margin-bottom: 30px;
+}
+img{
+	position: relative;
+	top: 20px;
+}
+#dangky{
+	color: white;
+	background-color: #00a125;
+	height: 25px;
+}
+input, textarea,#chu{
+	background-color: #f0f1e0;
+	--webkit-border-radius: 6px 6px 6px 6px;
+	border-radius: 6px 6px 6px 6px;
+}
