@@ -16,7 +16,7 @@ function Kiemtra(){
 		if(check_hoten.test(hoten)){
 			document.getElementById('1').innerText = "Hợp lệ!" ;
 		}else{
-			document.getElementById('1').innerText = "Họ tên phải là chữ!";
+			document.getElementById('1').innerText = "Họ tên phải là chữ, ko dấu!";
 		}
 	}
 
