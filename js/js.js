@@ -11,46 +11,57 @@ function Kiemtra(){
 
 	if( hoten =="" ){
 			document.getElementById('1').innerText = "Không đc trống!" ;
+			return false;
 
 	}else{
 		if(check_hoten.test(hoten)){
 			document.getElementById('1').innerText = "Hợp lệ!" ;
 		}else{
 			document.getElementById('1').innerText = "Họ tên phải là chữ, ko dấu!";
+			return false;
 		}
 	}
 
 	if( tentk =="" ){
 		document.getElementById('2').innerText = "Không đc trống!" ;
+		return false;
 	}else{
 		if (check_tentk.test(tentk)) {
 			document.getElementById('2').innerText = "Hợp lệ!" ;
 				
 		}else{
 			document.getElementById('2').innerText = "Tài khoản không được chứa ký tự dấu cách và chỉ bao gồm các ký tự chữ cái a-z hoặc số 0-9 (không phân biệt hoa thường)";
+			return false;
 		}
 	}
-
-	if( email =="" ){
-		document.getElementById('4').innerText = "Không đc trống!" ;
-	}else{
-		if(check_email.test(email)){
-			document.getElementById('4').innerText = "Hợp lệ!" ;
-		}else{
-			document.getElementById('4').innerText = "Không hợp lệ!" ;
-		}
-	}
-
 
 	if (sdt=="") {
 		document.getElementById('3').innerText = "Không đc trống!" ;
+		return false;
 	}else{
 		if(check_sdt.test(sdt)){
 			document.getElementById('3').innerText = "SĐT hợp lệ!" ;
 		}else{
 			document.getElementById('3').innerText = "SĐT không hợp lệ!" ;
+			return false;
 		}
 	}
+
+	if( email =="" ){
+		document.getElementById('4').innerText = "Không đc trống!" ;
+		return false;
+	}else{
+		if(check_email.test(email)){
+			document.getElementById('4').innerText = "Hợp lệ!" ;
+		}else{
+			document.getElementById('4').innerText = "Không hợp lệ!" ;
+			return false;
+		}
+	}
+
+
+	
+	return true;
 
 
 }
